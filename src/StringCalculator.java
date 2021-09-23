@@ -10,7 +10,7 @@ public class StringCalculator {
 	}
 	
 	public static void main (String args[]) {
-	
+	try {
 		String numberString = "1,2";
 		String numberString2 = "";
 
@@ -20,4 +20,9 @@ public class StringCalculator {
 		
 		
 		}
+	catch(Exception e)
+	{
+		System.out.println("0");
+	}
+}
 }
