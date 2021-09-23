@@ -13,13 +13,17 @@ public class StringCalculator {
 	}
 	
 	public static void main (String args[]) {
-
+		try {
 		String numberString = "1,2";
-		String numberString2 = ""; 
+		String numberString2 = ""; //to return zero on empty string
 
 		StringCalculator sc = new StringCalculator();
 		//Testing INputs
 		System.out.println(sc.Add(numberString)) ;
 		System.out.println(sc.Add(numberString2)) ;
+	}
+	catch(Exception e) {
+		
+		System.out.println("0");}
 	}
 }
